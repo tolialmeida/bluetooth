@@ -1,5 +1,9 @@
 # bluetooth
 information about bluetooth (usb dongle)
+## Bash command
+- dmesg |grep -i blue
+- lsusb
+
 
 ## Configuration:
 
