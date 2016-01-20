@@ -1,5 +1,6 @@
 # bluetooth
 information about bluetooth (usb dongle)
+librarys in /opt/bt/bluez-5.37-src/src/shared
 ## Bash command
 - dmesg |grep -i blue
 - lsusb
