@@ -7,7 +7,7 @@
 - lsusb
 
 
-## Configuration:
+# Configuration:
 
 - change like root o sudo
 - lsusb ( ok, you can see usb bluetooth dongle)
