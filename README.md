@@ -22,7 +22,7 @@ In mode advertising if you like more information, the central (normaly) ask betw
 - sudo hciconfig hci0 up
 - sudo hciconfig hci0 leadv 3
 
-      command    -------    ogf --- ocf   ---------------------PAYLOAD------31bytes-------------------------------------------     
+      command    -----------    ogf --- ocf   -----------------PAYLOAD------31bytes-------------------------------------------     
       
 sudo hcitool -i hci0 cmd 0x08 0x0008 1e 02 01 1a 1a ff 4c 00 02 15 e2 c5 6d b5 df fb 48 d2 b0 60 d0 f5 a7 10 96 e0 00 00 00 00 c5 00
 
@@ -31,6 +31,10 @@ where  ogf 0x08, ocf 0x0008:  value to configure payload
       now the payload is (1º length, 2º type, 2º value) (1º length, 2º value) (1º length, 2º value)..... 
       02 (length) ; 01(type)  1aflags (value)
       1a (length (26 decimal)) = ibeacon configuration: ff(Type) 4c 00 (apple company) 00 02.... (UUID) 
+      
+When you execute the comand hci answer the result 
+HCI Event: 0x0e plen 4
+  01 09 20 00--> 00 is OK
 
 now the dongle is a ibeacon with a uidd. almost everything is data payload is UUID...HOw Can I put more data???: in scan response. 
 # scan response
