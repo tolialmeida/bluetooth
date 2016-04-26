@@ -40,3 +40,6 @@ now the dongle is a ibeacon with a uidd. almost everything is data payload is UU
 # scan response
                                     ----- PAYLOAD--------------
 sudo hcitool -i hci0 cmd 0x08 0x0008 total_length mibyte mibyte mibyte.....
+for example
+
+sudo hcitool -i hci0 cmd 0x08 0x0009 0c 0b 09 6c 69 6e 6b 6d 6f 74 69 6f 6e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
