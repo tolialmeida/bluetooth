@@ -36,7 +36,7 @@ When you execute the comand hci answer the result
 HCI Event: 0x0e plen 4
   01 09 20 00--> 00 is OK
 
-now the dongle is a ibeacon with a uidd. almost everything is data payload is UUID...HOw Can I put more data???: in scan response. 
+now the dongle is a ibeacon with a uidd. almost everything is data payload is UUID...HOw Can I put more data???: in scan response, but a ibeacon never scan response...only advertising; beacon is a type protocol of mode advertising. You can custom your beacon and scan response but ibeacon (beacon ??) no can't because their protocol
 # scan response
                                     ----- PAYLOAD--------------
 sudo hcitool -i hci0 cmd 0x08 0x0008 total_length mibyte mibyte mibyte.....
