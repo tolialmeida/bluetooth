@@ -36,10 +36,11 @@ When you execute the comand hci answer the result
 HCI Event: 0x0e plen 4
   01 09 20 00--> 00 is OK
 
-now the dongle is a ibeacon with a uidd. almost everything is data payload is UUID...HOw Can I put more data???: in scan response, but a ibeacon never scan response...only advertising; beacon is a type protocol of mode advertising. You can custom your beacon and scan response but ibeacon (beacon ??) no can't because their protocol
+now the dongle is a ibeacon with a uidd. almost everything is data payload is UUID...HOw Can I put more data???: in scan response, the central ask more information "scan request", if the beacon have response--> answer vía scan response  
 # scan response
                                     ----- PAYLOAD--------------
 sudo hcitool -i hci0 cmd 0x08 0x0008 total_length mibyte mibyte mibyte.....
 for example
 
 sudo hcitool -i hci0 cmd 0x08 0x0009 0c 0b 09 6c 69 6e 6b 6d 6f 74 69 6f 6e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+¿¿¿¿in scan response you should put apple company to ios can recognize it.
