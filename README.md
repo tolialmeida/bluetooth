@@ -17,7 +17,7 @@
 # Generally:
 You can put in the payload (31 bytes), but there are standar configuration like ibeacon. Ibeacon is a bluetooth advertisen no connetable. eddystone = ibeacon (apple) beacon but made for google, with theirs configuration. 
 In mode advertising if you like more information, the central (normaly) ask between every beacon advertising signal---> scan response, if there are more data configurated in the module advertising (in this case beacon) this answer.
-
+You can create your custom beacon, and it can be connectable.
 # dongle usb ibeacon:
 - sudo hciconfig hci0 up
 - sudo hciconfig hci0 leadv 3
